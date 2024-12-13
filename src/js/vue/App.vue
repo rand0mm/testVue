@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <component :is="component" />
-  </div>
+  <component :is="component" />
 </template>
 
 <script>
