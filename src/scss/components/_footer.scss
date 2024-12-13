@@ -1,0 +1,15 @@
+@use 'src/scss/base' as *;
+
+.footer {
+  $root: &;
+
+  margin-top: auto;
+
+  background: $color-gray;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  &__inner {
+    @extend .container;
+  }
+}

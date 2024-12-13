@@ -1,0 +1,75 @@
+mixin picture(options)
+  if options
+    picture(class=options.picClass)
+      if options._1920 && options._1920.url
+        - var url = `${options._1920.url} 1x, ${options._1920.url2x || options._1920.url} 2x`
+        source(
+          srcset=url
+          media='(min-width: 1920px)'
+          width=options._1920.width || undefined
+          height=options._1920.height || undefined
+        )
+      
+      if options._1440 && options._1440.url
+        - var url = `${options._1440.url} 1x, ${options._1440.url2x || options._1440.url} 2x`
+        source(
+          srcset=url
+          media='(min-width: 1440px)'
+          width=options._1440.width || undefined
+          height=options._1440.height || undefined
+        )
+      
+      if options._1280 && options._1280.url
+        - var url = `${options._1280.url} 1x, ${options._1280.url2x || options._1280.url} 2x`
+        source(
+          srcset=url
+          media='(min-width: 1280px)'
+          width=options._1280.width || undefined
+          height=options._1280.height || undefined
+        )
+      
+      if options._1024 && options._1024.url
+        - var url = `${options._1024.url} 1x, ${options._1024.url2x || options._1024.url} 2x`
+        source(
+          srcset=url
+          media='(min-width: 1024px)'
+          width=options._1024.width || undefined
+          height=options._1024.height || undefined
+        )
+      
+      if options._768 && options._768.url
+        - var url = `${options._768.url} 1x, ${options._768.url2x || options._768.url} 2x`
+        source(
+          srcset=url
+          media='(min-width: 768px)'
+          width=options._768.width || undefined
+          height=options._768.height || undefined
+        )
+      
+      if options._400 && options._400.url  
+        - var url = `${options._400.url} 1x, ${options._400.url2x || options._400.url} 2x`
+        source(
+          srcset=url
+          media='(min-width: 400px)'
+          width=options._400.width || undefined
+          height=options._400.height || undefined
+        )
+      
+      if options._0 && options._0.url
+        - var url = `${options._0.url} 1x, ${options._0.url2x || options._0.url} 2x`
+        source(
+          srcset=url
+          media=options._0.forAllRes ? undefined : '(max-width: 399.98px)'
+          width=options._0.width || undefined
+          height=options._0.height || undefined
+        )
+        
+      if options._0 && options._0.url
+        img(
+          src=options._0.url
+          width=options._0.width || undefined
+          height=options._0.height || undefined
+          loading="lazy"
+          alt=''
+        )&attributes(attributes)
+      

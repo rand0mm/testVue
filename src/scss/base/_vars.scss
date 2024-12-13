@@ -1,0 +1,89 @@
+/* Main Colors */
+$color-base: #171717;
+$color-white: #fff;
+$color-gray: #ccc;
+$color-primary: #E20210;
+$color-secondary: #0E3DB8;
+
+$color-bg: #f8f8f8;
+$color-text: $color-base;
+$color-error: $color-primary;
+$color-popup-background: $color-white;
+
+$color-overlay: $color-base;
+$opacity-overlay: .4;
+
+$link-color: $color-text;
+$link-hover-color: $color-primary;
+
+$transition-duration: .2s;
+$transition-timing-function: ease-in-out;
+
+$header-z-index: 1000;
+$header-height: (sm: 2rem,
+  md: 3rem,
+  lg: 4rem,
+  xl: 5rem,
+);
+$header-height-scroll: (sm: 2rem,
+  md: 3rem,
+  lg: 4rem,
+  xl: 5rem,
+);
+$header-height-open: (sm: 6.8rem,
+  md: 6.8rem,
+  lg: 9.6rem,
+  xl: 14.1rem,
+);
+
+/* notify */
+$header-notify-height: (sm: 10rem,
+  md: 6rem,
+  lg: 4.4rem,
+  xl: 4rem,
+);
+
+
+/* Fonts */
+$font-family: 'Fira Sans', sans-serif;
+$font-family-alt: 'halvar', $font-family;
+$font-size: 10px;
+$font-weight: normal;
+$letter-spacing: normal;
+$line-height: 1.2;
+
+/* Screen sizes */
+$grid-breakpoints: (sm: 320px,
+  md: 768px,
+  lg: 1280px,
+  xl: 1600px);
+$screen-max-widths: (sm: 32rem,
+  md: 76.8rem,
+  lg: 128rem,
+  xl: 160rem);
+$container-max-widths: (sm: 100%,
+  md: 100%,
+  lg: 1170px,
+  xl: 1170px);
+$container-paddings: (sm: 25px,
+  md: 50px,
+  lg: 0,
+  xl: 0);
+
+$data-color-selector-light: "data-theme='light'";
+$data-color-selector-dark: "data-theme='dark'";
+$data-color-selector-c-light: "data-theme='contrast-light'";
+$data-color-selector-c-dark: "data-theme='contrast-dark'";
+$data-color-selector-c-blue: "data-theme='contrast-blue'";
+
+$data-images-selector-1: "data-images='1'";
+$data-images-selector-2: "data-images='2'";
+$data-images-selector-3: "data-images='3'";
+
+$data-no-effects-selector: "data-no-effects";
+
+$medias: md, lg, xl;
+
+$zoom-sizes: [100, 125, 150, 175, 200];
+
+$form-preloader-width: 5.6rem;
